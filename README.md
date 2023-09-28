@@ -39,16 +39,19 @@ public Github Repo.
 
 ## Access
 The implementation requires the user to set environment variables for access to the S3 datastore. 
+
 ``
 export AWS_ACCESS_KEY_ID=your_access_key_id
 export AWS_SECRET_ACCESS_KEY=your_secret_access_key
 ``
 
 For Linux/macOS please update your shell profile, for Windows users please set the environment variables through the System Properties or via Powershell commands. 
+
 ``
 $env:AWS_ACCESS_KEY_ID = "your_access_key_id"
 $env:AWS_SECRET_ACCESS_KEY = "your_secret_access_key"
 ``
+
 Make sure to replace "your_access_key_id" and "your_secret_access_key" with your actual AWS access key ID and secret access key.
 
 These environment variables will be set for the current PowerShell session. If you want to make them persistent across sessions, you can use the [System.Environment]::SetEnvironmentVariable method with the -User or -Machine scope, 
@@ -58,3 +61,4 @@ depending on whether you want them to be user-specific or system-wide. Here's an
 [System.Environment]::SetEnvironmentVariable("AWS_ACCESS_KEY_ID", "your_access_key_id", [System.EnvironmentVariableTarget]::User)
 [System.Environment]::SetEnvironmentVariable("AWS_SECRET_ACCESS_KEY", "your_secret_access_key", [System.EnvironmentVariableTarget]::User)
 ``
+
