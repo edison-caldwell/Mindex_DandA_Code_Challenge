@@ -51,7 +51,8 @@ $env:AWS_SECRET_ACCESS_KEY = "your_secret_access_key"
 ``
 Make sure to replace "your_access_key_id" and "your_secret_access_key" with your actual AWS access key ID and secret access key.
 
-These environment variables will be set for the current PowerShell session. If you want to make them persistent across sessions, you can use the [System.Environment]::SetEnvironmentVariable method with the -User or -Machine scope, depending on whether you want them to be user-specific or system-wide. Here's an example for user-specific persistence:
+These environment variables will be set for the current PowerShell session. If you want to make them persistent across sessions, you can use the [System.Environment]::SetEnvironmentVariable method with the -User or -Machine scope, 
+depending on whether you want them to be user-specific or system-wide. Here's an example for user-specific persistence:
 
 ``
 [System.Environment]::SetEnvironmentVariable("AWS_ACCESS_KEY_ID", "your_access_key_id", [System.EnvironmentVariableTarget]::User)
