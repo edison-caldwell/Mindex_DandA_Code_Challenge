@@ -62,3 +62,5 @@ depending on whether you want them to be user-specific or system-wide. Here's an
 [System.Environment]::SetEnvironmentVariable("AWS_SECRET_ACCESS_KEY", "your_secret_access_key", [System.EnvironmentVariableTarget]::User)
 ``
 
+The same will have to be done for the postgresql host ``MINDEX_POSTGRESQL_HOST``,
+username ``MINDEX_USERNAME``, and password ``MINDEX_PASSWORD``
