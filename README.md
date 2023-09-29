@@ -57,3 +57,6 @@ These environment variables will be set for the current PowerShell session. If y
 [System.Environment]::SetEnvironmentVariable("AWS_ACCESS_KEY_ID", "your_access_key_id", [System.EnvironmentVariableTarget]::User)
 [System.Environment]::SetEnvironmentVariable("AWS_SECRET_ACCESS_KEY", "your_secret_access_key", [System.EnvironmentVariableTarget]::User)
 ``
+
+The same will have to be done for the postgresql host ``MINDEX_POSTGRESQL_HOST``,
+username ``MINDEX_USERNAME``, and password ``MINDEX_PASSWORD``
